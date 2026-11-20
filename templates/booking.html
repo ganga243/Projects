@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Your Event</title>
+    <style>
+        body {
+            background: #35101f;
+            font-family: Arial;
+            padding: 30px;
+        }
+
+        .booking-box {
+            background: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: #35101f;
+            text-align: center;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background: #c9a253;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .success {
+            color: green;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="booking-box">
+
+    <h1>Book Your Event</h1>
+
+    {% if success %}
+        <p class="success">{{ success }}</p>
+    {% endif %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <input type="text" name="name"
+               placeholder="Customer Name" required>
+
+        <input type="tel" name="phone"
+               placeholder="Phone Number" required>
+
+        <input type="email" name="email"
+               placeholder="Email Address" required>
+
+        <select name="event_type" required>
+            <option value="">Select Event</option>
+            <option>Wedding</option>
+            <option>Birthday</option>
+            <option>Engagement</option>
+            <option>Corporate Event</option>
+            <option>Other</option>
+        </select>
+
+        <label>Event Date</label>
+        <input type="date" name="event_date" required>
+
+        <input type="text" name="location"
+               placeholder="Event Location" required>
+
+        <input type="number" name="guests"
+               placeholder="Number of Guests" min="1" required>
+
+        <select name="food_preference" required>
+            <option value="">Food Preference</option>
+            <option>Veg</option>
+            <option>Non-Veg</option>
+            <option>Both</option>
+        </select>
+
+        <textarea name="requirements"
+                  placeholder="Additional Requirements"></textarea>
+
+        <button type="submit">Submit Booking</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

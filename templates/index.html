@@ -1,0 +1,254 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Golden Heyday Caterers | Exceptional Catering</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                GOLDEN <span>HEYDAY</span>
+                <small> CATERERS</small>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="{% url 'booking' %}" class="nav-btn">
+             Book Now
+            </a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">GOLDEN HEYDAY CATERERS</p>
+
+            <h1>
+                Making Every
+                <span>Celebration</span>
+                Delicious
+            </h1>
+
+            <p class="hero-description">
+                Exceptional food, beautiful presentation and
+                unforgettable dining experiences for your
+                special moments.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="https://wa.me/919388483565"
+                   class="primary-btn" target="_blank">
+                    Book Your Event
+                </a>
+
+                <a href="#services" class="secondary-btn">
+                    Explore Services
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-decoration">
+            <div class="gold-circle">
+                <span>G</span>
+                <p>GOLDEN HEYDAY</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="about section" id="about">
+        <div class="section-heading">
+            <p>ABOUT OUR BRAND</p>
+            <h2>Creating Memorable <span>Food Experiences</span></h2>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Welcome to Golden Heyday Caterers</h3>
+
+                <p>
+                    We bring delicious food and beautiful dining
+                    experiences to your special occasions.
+                    From weddings to family celebrations,
+                    we make every event memorable.
+                </p>
+
+                <p>
+                    Our catering services focus on taste,
+                    presentation and customer satisfaction.
+                </p>
+
+                <a href="#contact" class="primary-btn">
+                    Know More
+                </a>
+            </div>
+
+            <div class="about-box">
+                <span>GOLDEN HEYDAY</span>
+                <h3>Every Occasion Deserves Something Special</h3>
+                <p>Food • Taste • Celebration</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="services section" id="services">
+        <div class="section-heading">
+            <p>WHAT WE OFFER</p>
+            <h2>Our Catering <span>Services</span></h2>
+        </div>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <span>01</span>
+                <h3>Wedding Catering</h3>
+                <p>Beautiful food arrangements for weddings and receptions.</p>
+            </div>
+
+            <div class="service-card">
+                <span>02</span>
+                <h3>Engagement Events</h3>
+                <p>Delicious catering for your engagement celebrations.</p>
+            </div>
+
+            <div class="service-card">
+                <span>03</span>
+                <h3>Birthday Parties</h3>
+                <p>Special food experiences for birthdays and family events.</p>
+            </div>
+
+            <div class="service-card">
+                <span>04</span>
+                <h3>Corporate Events</h3>
+                <p>Professional catering for business meetings and events.</p>
+            </div>
+
+            <div class="service-card">
+                <span>05</span>
+                <h3>Traditional Sadya</h3>
+                <p>Traditional Kerala meals for your special occasions.</p>
+            </div>
+
+            <div class="service-card">
+                <span>06</span>
+                <h3>Custom Catering</h3>
+                <p>Food arrangements planned around your event needs.</p>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section class="menu section" id="menu">
+        <div class="section-heading">
+            <p>OUR FOOD COLLECTION</p>
+            <h2>Explore Our <span>Menu</span></h2>
+        </div>
+
+        <div class="menu-container">
+            <div class="menu-card">
+                <h3>Kerala Traditional Meals</h3>
+                <p>Sadya, rice, curries, thoran and payasam.</p>
+            </div>
+
+            <div class="menu-card">
+                <h3>Breakfast</h3>
+                <p>Idli, appam, idiyappam and accompaniments.</p>
+            </div>
+
+            <div class="menu-card">
+                <h3>Main Course</h3>
+                <p>Rice-based meals, breads and delicious sides.</p>
+            </div>
+
+            <div class="menu-card">
+                <h3>Snacks & Refreshments</h3>
+                <p>Traditional snacks, tea-time bites and refreshments.</p>
+            </div>
+        </div>
+    </section>
+     
+
+<section class="gallery section" id="gallery">
+
+    <div class="section-heading">
+        <p>OUR SPECIAL MOMENTS</p>
+        <h2>Food & Event <span>Gallery</span></h2>
+    </div>
+     
+    
+    <div class="gallery-container">
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800" alt="Wedding Catering">
+        <h3>Wedding Celebrations</h3>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=800" alt="Traditional Food">
+        <h3>Traditional Kerala Food</h3>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800" alt="Food Presentation">
+        
+        <h3>Beautiful Food Presentation</h3>
+    </div>
+
+</div>
+
+    
+   
+
+    
+    <section class="contact section" id="contact">
+        <div class="section-heading">
+            <p>GET IN TOUCH</p>
+            <h2>Let's Make Your Event <span>Special</span></h2>
+        </div>
+
+        <div class="contact-content">
+            <h3>Golden Heyday Caterers</h3>
+
+            <p>Phone: +91 93884 83565</p>
+            <p>Email: goldenheydaycaterers@gmail.com</p>
+            <p>Location: Kizhakkambalam, Kerala</p>
+
+            <p>Service Locations: Pala, Muvattupuzha & Ernakulam</p>
+
+            <a href="https://wa.me/919388483565"
+               class="primary-btn" target="_blank">
+                Enquire on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    
+    <footer>
+        <h3>GOLDEN HEYDAY CATERERS</h3>
+        <p>Making Every Celebration Delicious.</p>
+        <p>© 2026 Golden Heyday Caterers. All Rights Reserved.</p>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
